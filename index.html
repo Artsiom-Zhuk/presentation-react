@@ -1,0 +1,205 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/myStyle.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section class="slide1">
+					<img src="./img/react_300.png" alt="React">
+					<p class="slide1_title" class="slide1_title">React</p>
+				</section>
+
+				<section class="slide2">
+					<img src="./img/react_100.png" alt="React">
+					<p class="slide_title">Main questions</p>
+					<ul>
+						<li>
+							1. What is React?
+						</li>
+						<li>
+							2. What is JSX?
+						</li>
+						<li>
+							3. What are the Components?
+						</li>
+						<li>
+							4. Props and State
+						</li>
+						<li>
+							5. Class Components and Functional Components
+						</li>
+						<li>
+							6. What are React lifecycle methods?
+						</li>
+						<li>
+							7. The Virtual DOM
+						</li>
+					</ul>
+				</section>
+
+				<section class="slide3">
+					<img src="./img/react_100.png" alt="React">
+					<p class="slide_title">What is React?</p>
+					<p class="slide3_description">React is a JavaScript library for building user interfaces.</p>
+				</section>
+
+				<section class="slide4">
+					<p class="slide_title">What is JSX</p>
+					<p class="slide4_description">
+						<span style="color: blueviolet">const</span> element =
+						<span style="color:deeppink">&lt;h1&gt;</span> Hello, world! 
+						<span style="color:deeppink">&lt;/h1&gt;</span>
+					</p>
+				</section>
+
+				<section class="slide5">
+						<p class="slide_title">What are the Components?</p>
+						<div class="slide5_container">
+							<img src="./img/slide5_img1.png" alt="React" width="300px" height="400px">
+							<div class="slide5_container_description">
+								<h4>Components:</h4>
+								<p>&lt;App /&gt;</p>
+								<p>&lt;Student /&gt;</p>
+								<p>&lt;Button /&gt;</p>
+							</div>
+						</div>
+				</section>
+
+				<section>
+					<section class="slide6">
+							<img src="./img/react_100.png" alt="React">
+							<p class="slide_title">Props and State</p>
+							<p class="slide6_description">Components need data to work with. There are two different ways that you 
+								can combine components and data: either as props or state.<br>
+								Props and state determine what a component
+								renders and how it behaves. 
+							</p>		
+					</section>
+					<section class="slide6_1">
+							<p class="slide_title">Props</p>
+							<img src="./img/props.jpg" alt="props">
+					</section>
+					<section class="slide6_2">
+							<p class="slide_title">State</p>
+							<img src="./img/state.jpg" alt="state">
+					</section>
+				</section>
+
+				<section>
+					<section class="slide7">
+							<img src="./img/react_100.png" alt="React">
+							<p class="slide_title">Class Components and Functional Components</p>
+							<p class="slide7_description">A React component can be of two types: either a class component or a 
+								functional component. The difference between the two is evident from their names. 
+							</p>		
+					</section>
+					<section class="slide7_1">
+							<p class="slide_title">Class Component</p>
+							<img src="./img/class_component.jpg" alt="Class Component">
+					</section>
+					<section class="slide7_2">
+							<p class="slide_title">Functional Components</p>
+							<img src="./img/functional_component.jpg" alt="Functional Components">
+					</section>
+				</section>
+
+				<section>
+					<section class="slide8">
+							<p class="slide_title">What are React lifecycle methods?</p>
+							<img src="./img/lifecycle.png" alt="React lifecycle methods">		
+					</section>
+
+					<section class="slide8_">
+							<p class="slide_title">Mount</p>
+							<div class="slide8_container">
+								<ul>
+									<li>constructor()</li>
+									<li><s>componentWillMount()</s> / static getDerivedStateFromProps()</li>
+									<li>render()</li>
+									<li>componentDidMount()</li>
+								</ul>
+								<img src="./img/lifecycle.png" alt="Mount" width="600px" height="350px">		
+							</div>
+					</section>
+
+					<section class="slide8_">
+							<p class="slide_title">Update</p>
+							<div class="slide8_container">
+								<ul>
+									<li><s>componentWillReceiveProps()</s> /  static getDerivedStateFromProps()</li>
+									<li>shouldComponentUpdate()</li>
+									<li><s>componentWillUpdate()</s> / getSnapshotBeforeUpdate()</li>
+									<li>render()</li>
+									<li>componentDidUpdate()</li>
+								</ul>
+								<img src="./img/lifecycle.png" alt="Update" width="600px" height="350px">		
+							</div>
+					</section>
+
+					<section class="slide8_">
+							<p class="slide_title">Unmount</p>
+							<div class="slide8_container">
+								<ul>
+									<li>componentWillUnmount</li>
+								</ul>
+								<img src="./img/lifecycle.png" alt="Unmount" width="600px" height="350px">		
+							</div>
+					</section>
+
+				</section>
+
+				<section class="slide9">
+						<p class="slide_title">The Virtual DOM</p>
+						<img src="./img/virtDom.jpg" alt="Virtual DOMt" width="800px" height="400px">		
+				</section>
+
+				<section class="slide10">
+					<h1>Thanks for attention!</h1>
+				</section>
+
+				
+
+
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
